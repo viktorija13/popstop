@@ -19,7 +19,7 @@ if (isset($_POST['registration'])) { // kada pritisnemo submit dugme sa nazivom 
             $errors['email'] = 'Invalid email address!';
         }
     } 
-
+ 
     if (empty($_POST['username'])) {
         $errors['username'] = 'Username is required!';
     } else {
