@@ -18,7 +18,7 @@ if (isset($_POST['registration'])) { // kada pritisnemo submit dugme sa nazivom 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $errors['email'] = 'Invalid email address!';
         }
-    }
+    } 
 
     if (empty($_POST['username'])) {
         $errors['username'] = 'Username is required!';
