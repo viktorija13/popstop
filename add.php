@@ -180,7 +180,7 @@ if (isset($_POST['add'])) {
 <script>
     function suggestArtist(str = "") {
         if (str.length == 0) {
-            document.getElementById("authorSuggest").innerHTML = "";
+            document.getElementById("artistSuggest").innerHTML = "";
         } else {
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {

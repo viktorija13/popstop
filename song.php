@@ -11,10 +11,11 @@ if (isset($_GET['id'])) {
     $song = mysqli_fetch_assoc($result);
     mysqli_free_result($result);
     $userid = $song['userid'];
-
+ 
     // uzimamo korisnika koji je postavio pesmu
     $query = "SELECT * FROM user WHERE id = $userid";
     $result = mysqli_query($conn, $query);
+
     $creator = mysqli_fetch_assoc($result);
     mysqli_free_result($result);
 }
